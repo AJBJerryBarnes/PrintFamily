@@ -195,6 +195,7 @@ function Record({familyRec}, {ctable}) {
 				<tr><td>Id:       	</td><td>{familyRec.getCellValue('FamilyId')}       	</td></tr>
 				<tr><td>Name:     	</td><td>{familyRec.getCellValue('FamillyName')}    	</td></tr>
 			    <tr><td>Address:  	</td><td>{familyRec.getCellValue('Address')}        	</td></tr>
+			    <tr><td>Post Code:  </td><td>{familyRec.getCellValue('PostCode')}        	</td></tr>
 				<tr><td>Housing:  	</td><td>{familyRec.getCellValueAsString('Housing')}	</td></tr>
 				<tr><td>Eligibility: </td><td>{familyRec.getCellValue('Eligible')}       	</td></tr>
 				<tr><td></td><td></td></tr>
