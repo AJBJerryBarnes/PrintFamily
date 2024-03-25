@@ -2,6 +2,7 @@
 //
 // 10/10/23    v0.1 Jerry Barnes	first try
 // 14/10/23	   v1.0 Jerry Barnes	initial release
+// 25/3/23
 //
 // 
 
@@ -215,7 +216,10 @@ function Record({familyRec}, {ctable}) {
 					 <tr><td>Gender: 					</td><td>{linkedRecord.getCellValueAsString('Gender')} 							</td></tr>
 					 <tr><td>Relationship To Head: 		</td><td>{linkedRecord.getCellValueAsString('RelationshipToHeadOfHousehold')} 	</td></tr>
 					 <tr><td>HealthNeed: 				</td><td>{linkedRecord.getCellValueAsString('HealthNeed')} 						</td></tr>
-					 <tr><td>DietaryNeed: 				</td><td>{linkedRecord.getCellValueAsString('DietaryNeed')} 					</td></tr>
+					 <tr><td>NHS App: 					</td><td><Checked value={linkedRecord.getCellValueAsString('Downloaded nhs app')} 			/></td></tr>
+					 <tr><td>Registered Doctor: 		</td><td><Checked value={linkedRecord.getCellValueAsString('Registered with a nhs doctor')} /></td></tr>
+					 <tr><td>Registered Dentist: 		</td><td><Checked value={linkedRecord.getCellValueAsString('Registered with a nhs dentist')} /></td></tr>
+					 <tr><td>DietaryNeed:				</td><td><Checked value={linkedRecord.getCellValueAsString('DietaryNeed')} 					/></td></tr>
 					 <tr><td>Status: 					</td><td>{linkedRecord.getCellValueAsString('Status')} 							</td></tr>
 					 <tr><td>Documentation Checked: 	</td><td><Checked value={linkedRecord.getCellValueAsString('StatusDocumentationChecked')} /></td></tr>
 					 <tr><td>RightToWork: 				</td><td><Checked value={linkedRecord.getCellValueAsString('RightToWork')} />				</td></tr>
@@ -224,9 +228,12 @@ function Record({familyRec}, {ctable}) {
 					 <tr><td>Unable To Work: 			</td><td><Checked value={linkedRecord.getCellValueAsString('UnableToWork')} /> 				</td></tr>
 					 <tr><td>Reason: 					</td><td>{linkedRecord.getCellValueAsString('UnableToWorkReason')} 				</td></tr>
 					 <tr><td>Benefits: 					</td><td>{linkedRecord.getCellValueAsString('Benefits')} 						</td></tr>
+					 <tr><td>How long on benefits: 		</td><td>{linkedRecord.getCellValueAsString('How long have you been receiving benefits?')} 	</td></tr>
 					 <tr><td>Other Benefits: 			</td><td>{linkedRecord.getCellValueAsString('OtherBenefits')} 					</td></tr>
 					 <tr><td>Pregnant: 					</td><td><Checked value={linkedRecord.getCellValueAsString('Pregnant')} /> 		</td></tr>
 					 <tr><td>DueDate: 					</td><td>{linkedRecord.getCellValueAsString('DueDate')}							</td></tr>
+					 <tr><td>Buss Pass: 				</td><td>{linkedRecord.getCellValueAsString('HARP bus pass applied for')}							</td></tr>
+					 <tr><td>Monthly Income: 			</td><td>{linkedRecord.getCellValueAsString('Approximate monthly income')}							</td></tr>
 					 <tr><td></td><td></td></tr>
 				</table>	 
 				);
