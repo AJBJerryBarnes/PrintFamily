@@ -223,7 +223,7 @@ function Record({familyRec}, {ctable}) {
 					 <tr><td>Status: 					</td><td>{linkedRecord.getCellValueAsString('Status')} 							</td></tr>
 					 <tr><td>Documentation Checked: 	</td><td><Checked value={linkedRecord.getCellValueAsString('StatusDocumentationChecked')} /></td></tr>
 					 <tr><td>RightToWork: 				</td><td><Checked value={linkedRecord.getCellValueAsString('RightToWork')} />				</td></tr>
-					 <tr><td>No Right To Public Funds: 	</td><td><Checked value={linkedRecord.getCellValueAsString('NoRightToPublicFunds')} /> 		</td></tr>
+					 <tr><td>Right To Public Funds: 	</td><td><Checked value={linkedRecord.getCellValueAsString('RightToPublicFunds')} /> 		</td></tr>
 					 <tr><td>Working: 					</td><td><Checked value={linkedRecord.getCellValueAsString('Working')} /> 					</td></tr>
 					 <tr><td>Unable To Work: 			</td><td><Checked value={linkedRecord.getCellValueAsString('UnableToWork')} /> 				</td></tr>
 					 <tr><td>Reason: 					</td><td>{linkedRecord.getCellValueAsString('UnableToWorkReason')} 				</td></tr>
